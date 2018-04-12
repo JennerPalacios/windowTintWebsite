@@ -1,0 +1,262 @@
+body {
+	font: 400 15px Lato, sans-serif;
+	line-height: 1.8;
+	color: #000;
+}
+.red {
+	color: #F00;
+}
+.img-logo {
+	height: 50px;
+	position: absolute;
+	top: 0;
+}
+.splash {
+	display: inline-block;
+	background: rgba(0,0,0,0.7);
+	padding: 10px 25px;
+}
+.splash-p {
+	display: block;
+	background: rgba(0,0,0,0.8);
+	padding: 10px 25px;
+	color: #FFF;
+	margin-top: 200px;
+}
+h1 {
+	font-size: 30px;
+}
+h1.underlined {
+	text-transform: uppercase;
+	border-bottom: solid 4px #F00;
+	display: inline-block;
+}
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #303030;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+h2.underlined {
+	border-bottom: solid 4px #F00;
+}
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #303030;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.jumbotron {
+	position: relative;
+	top: -48px;
+	background-image: url("../img/top-bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: #FFF;
+	padding: 100px 50px;
+	height: 450px;
+	font-family: Montserrat, sans-serif;
+}
+#all {
+	position: relative;
+	top: -48px;
+}
+.container-fluid {
+	padding: 30px 50px;
+}
+.bg-grey {
+	background: #DDD;
+}
+.bg-lgrey {
+	background: #EFEFEF;
+}
+.bg-mid {
+	background-image: url("../img/mid-bg.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 450px;
+}
+.logo-small {
+	color: #F00;
+	font-size: 50px;
+}
+.logo {
+	color: #F00;
+	font-size: 200px;
+}
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #F00;
+}
+.carousel-indicators li {
+	border-color: #F00;
+}
+.carousel-indicators li.active {
+	background-color: #F00;
+}
+.item h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	font-weight: 400;
+	font-style: italic;
+	margin: 70px 0;
+}
+.item span {
+	font-style: normal;
+}
+.panel {
+	border: 1px solid #F00; 
+	border-radius:0 !important;
+	transition: box-shadow 0.5s;
+}
+.panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.panel-footer .btn:hover {
+	border: 1px solid #F00;
+	background-color: #fff !important;
+	color: #F00;
+}
+.panel-heading {
+	color: #fff !important;
+	background-color: #F00 !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.panel-footer {
+	background-color: white !important;
+}
+.panel-footer h3 {
+	font-size: 32px;
+}
+.panel-footer h4 {
+	color: #aaa;
+	font-size: 14px;
+}
+.panel-footer .btn {
+	margin: 15px 0;
+	background-color: #F00;
+	color: #fff;
+}
+.navbar {
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	font-weight: bold;
+	line-height: 1.42857143 !important;
+	letter-spacing: 2px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+	color: #FFF !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #A00 !important;
+	background-color: #EFEFEF !important;
+}
+.navbar-default .navbar-toggle {
+	border-color: #A00;
+	background-color: #FAA;
+	color: #F00 !important;
+}
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #F00;
+}
+.slideanim {visibility:hidden;}
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+.backtotop {
+	position: fixed;
+	bottom: 0px;
+	right: 1px;
+}
+.backtotop a {
+	display: block;
+	color: #F00;
+	font-size: 18px;
+	background: #555;
+	padding: 1px 10px;
+}
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	} 
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+	.btn-lg {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.splash-p {
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.logo {
+		font-size: 150px;
+	}
+	.jumbotron {
+		padding: 60px 10px;
+	}
+}
+@media screen and (max-width: 900px) {
+	.jumbotron {
+		background-size: auto 450px;
+	}
+	.bg-mid {
+		background-size: auto 450px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.splash {
+		width: 500px;
+	}
+	.jumbotron h1 {
+		font-size: 30px !important;
+	}
+}
