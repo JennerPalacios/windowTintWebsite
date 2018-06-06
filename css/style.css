@@ -23,6 +23,20 @@ body {
 	color: #FFF;
 	margin-top: 200px;
 }
+.splash-s {
+	display: block;
+	background: rgba(0,0,0,0.8);
+	padding: 10px 25px;
+	color: #FFF;
+}
+.icon-center {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+.bold {
+	font-weight: bold;
+}
 h1 {
 	font-size: 30px;
 }
@@ -41,12 +55,18 @@ h2 {
 h2.underlined {
 	border-bottom: solid 4px #F00;
 }
+h2.inline {
+	display: inline-block;
+}
 h4 {
 	font-size: 19px;
 	line-height: 1.375em;
 	color: #303030;
 	font-weight: 400;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
+}
+.color-white {
+	color: #FFF;
 }
 .jumbotron {
 	position: relative;
@@ -115,6 +135,8 @@ h4 {
 }
 .item span {
 	font-style: normal;
+	font-size: 12px;
+	color: #666;
 }
 .panel {
 	border: 1px solid #F00; 
@@ -183,7 +205,9 @@ footer .glyphicon {
 	margin-bottom: 20px;
 	color: #F00;
 }
-.slideanim {visibility:hidden;}
+.slideanim {
+	visibility:hidden;
+}
 .slide {
 	animation-name: slide;
 	-webkit-animation-name: slide;
@@ -191,10 +215,17 @@ footer .glyphicon {
 	-webkit-animation-duration: 1s;
 	visibility: visible;
 }
+.img-responsive {
+	margin: auto;
+}
 .backtotop {
 	position: fixed;
-	bottom: 0px;
-	right: 1px;
+	bottom: 10px;
+	right: 10px;
+	opacity: 0.7;
+}
+.backtotop:hover,.backtotop:active {
+	opacity: 1;
 }
 .backtotop a {
 	display: block;
